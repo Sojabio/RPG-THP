@@ -8,7 +8,7 @@ class Assassin extends Character {
   specialAttack  = (selectedVictim) => {
     if(this.mana > 0){
       this.specialAttackName = "Shadow hit";
-      this.specialAttackDmg = 7;// inflige 7 dmg et si adversaire pas mort, reçoit aussi 7 dmg.
+      this.specialAttackDmg = 7;
       this.specialAttackMana = - 20;
       this.specialFeatureStatus = "processing";
       if (selectedVictim.hp > 0){
